@@ -1,0 +1,28 @@
+# Files to exclude from Prettier formatting
+# - Uses .gitignore syntax
+# - See https://prettier.io/docs/en/ignore.html
+
+# Ignore dependency directories
+**/node_modules
+
+# Ignore artifacts:
+build
+dist
+coverage
+
+# Ignore minified files
+**/*.min.*
+**/*-min.*
+
+# Ignore temp and local directories
+local
+temp
+tmp
+
+# Misc files to leave unformatted
+docs
+config
+samples
+output
+.backup
+.nuxt

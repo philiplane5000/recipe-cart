@@ -1,0 +1,53 @@
+{
+  // ========================================
+  // Recipe Cart - VSCode Project Settings
+  // ========================================
+
+  // Tailwind CSS Support
+  // Ignore @apply and other Tailwind directives that VSCode doesn't recognize
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+
+  // ESLint Configuration
+  // Modern flat config setup for consistent code quality across the team
+  "eslint.useFlatConfig": true,
+  "eslint.validate": ["javascript", "typescript", "vue", "html", "markdown", "json", "jsonc"],
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.options": {
+    "overrideConfigFile": "./eslint.config.ts"
+  },
+
+  // Auto-Fix & Formatting
+  // Automatically clean up code on save for consistent style
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always", // Fix linting errors automatically
+    "source.organizeImports": "always" // Sort and organize imports
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false, // Don't format while typing (less intrusive)
+
+  // Code Style Consistency
+  // Ensure uniform spacing across all team members
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+
+  // File-Specific Formatters
+  // Use ESLint for code files, Prettier for config files
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // JSON with comments
+  }
+}
