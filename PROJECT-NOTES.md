@@ -235,3 +235,50 @@ npm run lint         # Code linting
 ---
 
 **Project Goal:** Ship a working MVP that solves the core problem of automated shopping list generation from meal plans, with room to grow into advanced features and potential grocery store integrations.
+
+## Schema Validation
+
+- [Zod](---)
+
+That's a fantastic question, and it's a critical next step for building a robust and secure API. Implementing a JSON schema validator will add another layer of security and data integrity to your server routes.
+
+For your Nuxt setup, you would typically define and implement the validator in two main places:
+
+### 1\. Defining the Schema
+
+You'd define the JSON Schema itself in a dedicated, shared directory, such as `~/server/schemas` or `~/shared/types/schemas`. Using a validation library like [Zod](https://zod.dev/) or [Joi](https://joi.dev/) is the standard approach here.
+
+For example, you could create a file like `~/server/schemas/recipeSchema.ts` and define your schema for a `BaseRecipe`:
+
+```typescript
+import { z } from 'zod';
+
+export const recipeSchema = z.object({
+  name: z.string().min(1),
+  description: z.string().optional(),
+  // ... all other fields
+});
+```
+
+### 2\. Implementing the Validator
+
+Once defined, you would implement this schema directly within your Nuxt server routes. The `h3` library that Nuxt's server routes are built on has excellent, built-in helpers for this exact purpose.
+
+Instead of using `readBody()`, you would use `readValidatedBody()`. This function takes the event and your schema as arguments. It will automatically parse the body, validate it against the schema, and throw an `H3Error` if the data is invalid, preventing you from ever processing bad data.
+
+So, in your `/api/recipe/[id].put.ts` file, you would change this line:
+
+```typescript
+const updatedRecipeData = await readBody<BaseRecipe>(event);
+```
+
+To this:
+
+```typescript
+import { readValidatedBody } from 'h3';
+import { recipeSchema } from '~/server/schemas/recipeSchema';
+
+const updatedRecipeData = await readValidatedBody(event, recipeSchema);
+```
+
+This ensures that the incoming data is always valid and correctly typed before you even attempt to update the database. This is the recommended and standard approach for building type-safe and secure APIs in Nuxt.
