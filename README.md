@@ -46,7 +46,7 @@ npm run preview
 ## 🛠️ Tech Stack
 
 - **Framework**: [Nuxt 4](https://nuxt.com/) - Vue.js meta-framework with TypeScript
-- **UI Library**: [Vuetify](https://vuetifyjs.com/) - Material Design components
+- **UI Library**: [Nuxt UI](https://ui.nuxt.com/) - Nuxt UI Components
 - **CSS Framework**: [Tailwind CSS](https://tailwindcss.com/) - Utility-first styling
 - **Database**: [MongoDB Atlas](https://www.mongodb.com/atlas) - Cloud-native document database
 - **Component Architecture**: [Atomic Design Pattern](https://atomicdesign.bradfrost.com/) with TypeScript
@@ -72,7 +72,6 @@ npm run preview
 ## 📚 Documentation
 
 - [Nuxt Documentation](https://nuxt.com/docs/getting-started/introduction)
-- [Vuetify Documentation](https://vuetifyjs.com/en/getting-started/installation/)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Vue 3 + TypeScript Guide](https://vuejs.org/guide/typescript/overview.html)
 - [MongoDB Atlas Documentation](https://www.mongodb.com/docs/atlas/)

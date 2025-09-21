@@ -1,0 +1,14 @@
+@layer app {
+  :root {
+    --color-cream: #f2e8df;
+    --color-blush: #f2e1df;
+
+    /* Nuxt UI Variable Overrides */
+    --ui-bg: var(--color-cream);
+    --ui-text: var(--color-primary-500);
+    --ui-bg-inverted: var(--color-primary-700);
+  }
+  html {
+    font-family: Montserrat, Helvetica, Arial, sans-serif !important;
+  }
+}

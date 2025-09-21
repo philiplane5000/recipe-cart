@@ -10,11 +10,11 @@
 ## 🛠️ Tech Stack
 
 - **Framework**: Nuxt 4 (Vue.js + TypeScript)
-- **UI Library**: Vuetify (Material Design)
+- **UI Library**: Nuxt UI
 - **CSS Framework**: Tailwind CSS
 - **Database**: MongoDB Atlas
 - **Architecture**: Atomic Design Pattern
-- **Hosting**: TBD (Vercel/Netlify recommended for Nuxt)
+- **Hosting**: AWS Cloud
 
 ## ✨ MVP Features (Phase 1)
 
@@ -194,7 +194,7 @@ npm run lint         # Code linting
 
 **✅ Completed:**
 
-- Project setup with Nuxt 4 + Vuetify + Tailwind
+- Project setup with Nuxt 4 + Nuxt UI + Tailwind
 - Basic project structure with atomic design
 - Core TypeScript interfaces defined
 
@@ -228,7 +228,7 @@ npm run lint         # Code linting
 ## 🔗 Useful Resources
 
 - [Nuxt 4 Documentation](https://nuxt.com/docs)
-- [Vuetify Components](https://vuetifyjs.com/en/components/all/)
+- [Nuxt UI Components](https://ui.nuxt.com/)
 - [MongoDB Atlas Setup](https://www.mongodb.com/docs/atlas/)
 - [Recipe Microdata Standards](https://developers.google.com/search/docs/appearance/structured-data/recipe)
 

@@ -1,0 +1,95 @@
+@layer custom-utils {
+  .elevation-0 {
+    box-shadow:
+      0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+      0px 0px 0px 0px rgba(0, 0, 0, 0.14),
+      0px 0px 0px 0px rgba(0, 0, 0, 0.12) !important;
+  }
+  .elevation-1 {
+    box-shadow:
+      0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+  }
+  .elevation-2 {
+    box-shadow:
+      0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important;
+  }
+  .elevation-3 {
+    box-shadow:
+      0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+      0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 8px 0px rgba(0, 0, 0, 0.12) !important;
+  }
+  .elevation-4 {
+    box-shadow:
+      0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 10px 0px rgba(0, 0, 0, 0.12) !important;
+  }
+  .elevation-8 {
+    box-shadow:
+      0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+      0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+      0px 3px 14px 2px rgba(0, 0, 0, 0.12) !important;
+  }
+  .elevation-12 {
+    box-shadow:
+      0px 7px 8px -4px rgba(0, 0, 0, 0.2),
+      0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+      0px 5px 22px 4px rgba(0, 0, 0, 0.12) !important;
+  }
+
+  /* Adobe Color Theme (Aileen) */
+  .Aileen-1-hex {
+    color: #86a69d;
+  }
+  .Aileen-2-hex {
+    color: #f2b263;
+  }
+  .Aileen-3-hex {
+    color: #f2e8df;
+  }
+  .Aileen-4-hex {
+    color: #f2c6c2;
+  }
+  .Aileen-5-hex {
+    color: #f28585;
+  }
+
+  /* Color Theme Swatches in RGBA */
+  .Aileen-1-rgba {
+    color: rgba(133, 165, 156, 1);
+  }
+  .Aileen-2-rgba {
+    color: rgba(242, 177, 98, 1);
+  }
+  .Aileen-3-rgba {
+    color: rgba(242, 232, 223, 1);
+  }
+  .Aileen-4-rgba {
+    color: rgba(242, 198, 193, 1);
+  }
+  .Aileen-5-rgba {
+    color: rgba(242, 133, 133, 1);
+  }
+
+  /* Color Theme Swatches in HSLA */
+  .Aileen-1-hsla {
+    color: hsla(163, 15, 58, 1);
+  }
+  .Aileen-2-hsla {
+    color: hsla(33, 84, 66, 1);
+  }
+  .Aileen-3-hsla {
+    color: hsla(28, 42, 91, 1);
+  }
+  .Aileen-4-hsla {
+    color: hsla(5, 64, 85, 1);
+  }
+  .Aileen-5-hsla {
+    color: hsla(0, 80, 73, 1);
+  }
+}
