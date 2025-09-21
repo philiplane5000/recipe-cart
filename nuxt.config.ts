@@ -31,7 +31,7 @@ export default defineNuxtConfig({
   /**
    * Application-wide Styles
    */
-  css: ['~/assets/styles/main.scss'],
+  css: ['~/assets/css/main.css'],
 
   /**
    * Enable Nuxt DevTools for development.
@@ -50,6 +50,9 @@ export default defineNuxtConfig({
     /* (https://nuxt.com/modules/icon) */
     '@nuxt/icon',
 
+    /* Nuxt UI */
+    '@nuxt/ui',
+
     /* The Nuxt Google Fonts module */
     /* (https://google-fonts.nuxtjs.org/) */
     [
@@ -65,12 +68,11 @@ export default defineNuxtConfig({
       },
     ],
 
-    /* The Tailwind CSS Nuxt module */
-    /* (https://nuxt.com/modules/tailwindcss) */
-    '@nuxtjs/tailwindcss',
-
-    /* The Vuetify Nuxt module */
-    /* (https://nuxt.vuetifyjs.com/guide/) */
-    'vuetify-nuxt-module',
+    // /* The Tailwind CSS Nuxt module */
+    // /* (https://nuxt.com/modules/tailwindcss) */
+    // '@nuxtjs/tailwindcss',
   ],
+  // vite: {
+  //   plugins: [tailwindcss()],
+  // },
 });

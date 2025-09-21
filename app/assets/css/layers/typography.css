@@ -1,0 +1,82 @@
+@layer typography {
+  /* Headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    display: inline-flex;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  h1,
+  .h1 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h4,
+  .h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  h5,
+  .h5 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+
+  h6,
+  .h6 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Body text */
+  p {
+    margin: 0 0 1rem 0;
+    line-height: 1.6;
+  }
+
+  /* Inline elements */
+  strong,
+  b {
+    font-weight: 600;
+  }
+
+  em,
+  i {
+    font-style: italic;
+  }
+
+  small {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  /* Links */
+  a {
+    text-decoration: underline;
+    text-underline-offset: 0.125em;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}

@@ -8,6 +8,24 @@
   "css.lint.unknownAtRules": "ignore",
   "scss.lint.unknownAtRules": "ignore",
 
+  // Enhanced Tailwind CSS Configuration
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+
+  // Enable autocomplete suggestions inside string literals (for Tailwind classes)
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+
+  // Tailwind CSS IntelliSense settings
+  // Recognize 'ui' attribute in addition to 'class' for Tailwind suggestions
+  "tailwindCSS.classAttributes": ["class", "ui"],
+
+  // Advanced Tailwind class detection for custom syntax patterns
+  // Detects Tailwind classes in ui:{ } object syntax and template literals
+  "tailwindCSS.experimental.classRegex": [["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]],
+
   // ESLint Configuration
   // Modern flat config setup for consistent code quality across the team
   "eslint.useFlatConfig": true,

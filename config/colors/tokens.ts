@@ -123,7 +123,7 @@ export const colorTokens = {
   },
 } as const;
 
-// Light theme mapping for Vuetify
+// Light theme mapping
 export const lightTheme = {
   // Primary colors
   'primary': colorTokens.primary[400],
@@ -170,7 +170,7 @@ export const lightTheme = {
   'on-info': colorTokens.custom.white,
 } as const;
 
-// Future dark theme mapping for Vuetify
+// Future dark theme mapping
 export const darkTheme = {
   'primary': colorTokens.primary[400],
   'primary-lighten-1': colorTokens.primary[300],
