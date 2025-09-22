@@ -1,11 +1,20 @@
 @layer app {
-  :root {
+  :root,
+  .light {
     --color-cream: #f2e8df;
     --color-blush: #f2e1df;
 
-    /* Nuxt UI Variable Overrides */
+    /* Nuxt UI Overrides (Default Colors) */
+    --ui-primary: var(--color-primary-800);
+    --ui-secondary: var(--color-secondary-500);
+    --ui-success: var(--color-success-500);
+    --ui-info: var(--color-info-500);
+    --ui-warning: var(--color-warning-500);
+    --ui-error: var(--color-error-500);
+
+    /* Nuxt UI Overrides (Typography & Background Effects) */
     --ui-bg: var(--color-cream);
-    --ui-text: var(--color-primary-500);
+    --ui-text: var(--color-primary-800);
     --ui-bg-inverted: var(--color-primary-700);
   }
   html {

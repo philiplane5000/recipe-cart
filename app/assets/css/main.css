@@ -107,6 +107,8 @@
 
   --color-cream: var(--color-cream);
   --color-blush: var(--color-blush);
+  --color-dark: #000;
+  --color-light: #fff;
 
   --breakpoint-sm: 40rem;
   --breakpoint-md: 48rem;
